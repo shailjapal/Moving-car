@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(sky.jfif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.city {
+    width: 150%;
+    height: 80vh;
+    background-image: url(cityimage.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 16rem;
+    animation-name: city;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.airplane{
+    position: absolute;
+    z-index: 2;
+    top: -20px;
+    left: 252px;
+    animation: sky 3s linear 0s infinite  ;
+}
+.airplane img{
+    width: 300px;
+     
+}
+
+ @keyframes sky {
+    0%{
+        transform: translate(-50px);
+    }
+    100%{
+        transform: translate(1000px);
+    }
+  }
+
+@keyframes city {
+    100% {
+        transform: translate(-1000px)
+    }
+}
+
+.road {
+    width: 300%;
+    height: 21vh;
+    background-image: url(highwayside.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0px;
+    animation-name: road;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes road {
+    100% {
+        transform: translate(-2000px)
+    }
+}
+
+.car {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    bottom: 30px;
+    left: 300px;
+
+}
+
+.car img {
+    width: 300px;
+    height: 100px;
+}
+
+.wheel1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 37px;
+    left: 340px;
+}
+
+.wheel1 img {
+    width: 50px;
+    height: 50px;
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wheel2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 37px;
+    left: 490px;
+}
+
+.wheel2 img {
+    width: 50px;
+    height: 50px;
+    animation-name: wheel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes wheel {
+    100% {
+        transform: rotate(1000deg);
+    }
+}
+
+.driver {
+    width: 24px;
+    height: 23px;
+    position: absolute;
+    bottom: 95px;
+    left: 450px;
+}
+
+.driver img {
+    width: 24px;
+    height: 23px;
+}
